@@ -1,0 +1,123 @@
+﻿<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="../css/site2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div id="loading"></div>
+<div class="sidebarparent">
+<a href="#programming" class="sidebar">Programming</a>
+<a href="#modelling" class="sidebar">Modelling</a>
+<a href="#animation" class="sidebar">Animation</a>
+</div>
+<a class="subtitle"></a>
+<a href="javascirpt:void" id="menu-item" onclick="onBtnClickHandle()">Home</a>
+<a class="subtitle"></a>
+<a class="title">Showcase</a>
+<a class="tinysubtitle">This is a limited showcase, if you want to see more, visit: <span id="clickable" class="tinysubtitleLink">Model Archive</span> </a>
+<a class="subtitle" id="programming">Programming</a>
+<div class="boxed">Disclaimer! <br> There is no code shown here, as it is very hard to show that in a visual format, but I have over 6 years of experience programming in various launguages above, although I am mainly a C# developer, I am very fluent in many others, in terms of game development I have lots of experience developing complex systems including procedural loot spawning, procedural generation, artificial intelligence, bullet physics, complex inventory systems, objectives, vehicle mechanics , graphics programming, engine source code programming (Bohemia interactive’s Enfusion engine) and animation state programming; I also have experience in standalone application development for mobile apps, REACT, REST, AJAX, Javascript, HTML CSS websites and general desktop applications, and I am currently working as a networking infrastructure engineer part-time as that interests me a lot too!  </div>
+<div class="subsubtitle">Some Examples of in-Project code-based features, written on client-server style netcode</div>
+<div class="parent">
+    <div>
+        <img src="../gifs/shootin.gif" class="showcaseimages">
+        <img src="../gifs/airdrop.gif" class="showcaseimages">
+        <img src="../gifs/mortar.gif" class="showcaseimages">
+        <img src="../gifs/building.gif" class="showcaseimages">
+    </div>
+    <div>
+        <img src="../gifs/turret.gif" class="showcaseimages">
+        <img src="../gifs/glassin.gif" class="showcaseimages">
+        <img src="../gifs/rocket.gif" class="showcaseimages">
+    </div>
+</div>
+<div class="subsubtitle">Some out-of project *VERY* small examples, as stated above i have worked on many larger and more complex OO and non OO systems, they are also back-end focused so no real UI, my front-end skills include this website!</div>
+<div class="boxed"> <pre>[1] Example backend REACT website booking which uses AJAX, JSON, ASP.NET, RESTSHARP<br>
+[2] Example SOA console application/structure using encrpyted tokenization which has<br>
+    a database backend and pulls from 2 API servers<br>
+[3] Example P2P application which includes REACT website, ironPython running in a <br>
+    C# compiler base64 Encoding, SSH encoding, ping timeout set to 500ms</pre>
+    </div>
+        <img src="../gifs/example1.gif" class="showcaseimages">
+        <img src="../gifs/example2.gif" class="showcaseimages">
+        <img src="../gifs/example3.gif" class="showcaseimages">
+<a class="subtitle" id="modelling">Modelling & Level Design</a>
+<div class="parent">
+    <div>
+    <img src="../showcaseimages/Picture1.jpg" class="showcaseimages">
+    <img src="../showcaseimages/Picture3.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture5.png" class="showcaseimages">
+    <img src="../showcaseimages/piccy2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture7-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture9-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture25.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture11-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture13-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture15-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture17-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture19-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture21-2.png" class="showcaseimages">
+    </div>
+    <div>
+    <img src="../showcaseimages/Picture2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture4.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture6.png" class="showcaseimages">
+    <img src="../showcaseimages/piccy5.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture8-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture10-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture26.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture12-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture14-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture16-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture18-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture20-2.png" class="showcaseimages">
+    <img src="../showcaseimages/Picture22-2.png" class="showcaseimages">
+    </div>
+</div>
+<a class="subtitle" id="animation">Animation</a>
+<div class="parent">
+    <div>
+        <img src="../gifs/AWM2.gif" class="showcaseimages">
+        <img src="../gifs/map.gif" class="showcaseimages">
+        <img src="../gifs/render3.gif" class="showcaseimages">
+        <img src="../gifs/render2.gif" class="showcaseimages">
+        <img src="../gifs/render6.gif" class="showcaseimages">
+    </div>
+    <div>
+        <img src="../gifs/SKS2.gif" class="showcaseimages">
+        <img src="../gifs/render4.gif" class="showcaseimages">
+        <img src="../gifs/render1.gif" class="showcaseimages">
+        <img src="../gifs/render5.gif" class="showcaseimages">
+        <img src="../gifs/daynight.gif" class="showcaseimages">
+    </div>
+</div>
+<div id="menu-background-image" class="showcase"></div>
+
+<script>
+    let clickableText = document.querySelector("#clickable");
+
+    clickableText.addEventListener("click", function () {
+        onBtnClickModelArchive();
+
+    });
+    function onBtnClickHandle(){
+    document.getElementById("menu-background-image").style.backgroundPositionX = "110vw";
+    document.getElementById("menu-item").style.marginLeft = "110vw";
+    document.getElementById("programming").style.marginLeft = "110vw";
+    document.getElementsByClassName("title")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("subtitle")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("sidebarparent")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("boxed")[0].style.marginLeft = "110vw";
+document.getElementsByClassName("tinysubtitle")[0].style.marginLeft = "110vw";
+    setTimeout(function(){window.location="../index.html"}, 800);
+}
+    function onBtnClickModelArchive(){
+    document.getElementById("menu-background-image").style.backgroundPositionX = "110vw";
+    document.getElementById("menu-item").style.marginLeft = "110vw";
+    document.getElementById("programming").style.marginLeft = "110vw";
+    document.getElementsByClassName("title")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("subtitle")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("sidebarparent")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("boxed")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("tinysubtitle")[0].style.marginLeft = "110vw";
+    setTimeout(function(){window.open("https://waste-archives.netlify.app/models")}, 800);
+    setTimeout(function(){window.location="index.html"}, 1000);
+}
+</script>

@@ -1,0 +1,21 @@
+﻿<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="../css/site2.css">
+<a href="javascirpt:void" id="menu-item" onclick="onBtnClickHandle()">Home</a>
+<a class="title">Contact</a>
+<a href="https://www.linkedin.com/in/riley-ainge-3a6b5b1b6/" class="subtitlelink">Linkedin</a>
+<a class="subtitle">wastedeveveloper@gmail.com</a>
+<a class="subtitle">(+61) 24 340 286</a>
+<div id="menu-background-image" class="contact"></div>
+
+<script>
+    function onBtnClickHandle(){
+    document.getElementById("menu-background-image").style.backgroundPositionY = "110vw";
+    document.getElementById("menu-item").style.marginTop = "100%";
+    document.getElementsByClassName("title")[0].style.marginTop = "110hw";
+    document.getElementsByClassName("subtitle")[0].style.marginTop = "110hw";
+    document.getElementsByClassName("contact")[0].style.marginTop = "110hw";
+    document.getElementsByClassName("subtitle")[1].style.marginTop = "110hw";
+    document.getElementsByClassName("subtitlelink")[0].style.marginTop = "110vw";
+    setTimeout(function(){window.location="../index.html"}, 800);
+}
+</script>

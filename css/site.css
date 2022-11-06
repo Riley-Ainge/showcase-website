@@ -1,0 +1,162 @@
+html {
+  font-size: 14px;
+}
+@font-face {
+    font-family: customfont;
+    src = url(PPFragment-GlareExtraBold.otf);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+}
+#menu {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#menu-items {
+    margin-left: clamp(4rem, 10vw, 28rem);
+    position: relative;
+    z-index: 2;
+    transition: margin-left 800ms ease;
+}
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+}
+#menu-items:hover > .menu-item:hover {
+	margin-left: 50px;
+        opacity: 1;
+}
+#menu-items:hover ~ #menu-background-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+}
+.menu-item {
+    color: white;
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-family: customfont;
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    transition: opacity 400ms ease, margin-left 400ms ease;
+}
+.contact {
+    color: white;
+    position: fixed;
+    left: 40%;
+    bottom: 3%;
+    font-size: 3vw;
+    font-family: customfont;
+    text-decoration: none;
+    opacity: 0.5;
+    z-index: 2;
+    transition: opacity 400ms ease, margin-left 800ms ease;
+}
+.contact2 {
+    color: white;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    font-size: 3vw;
+    font-family: customfont;
+    text-decoration: none;
+    opacity: 0.5;
+    z-index: 2;
+    transition: opacity 400ms ease, margin-left 800ms ease;
+}
+.toptext {
+    color: white;
+    position: fixed;
+    top: 2%;
+    left: 40%;
+    opacity: 0.7;
+    font-size: 15px;
+    font-family: "Lucida Sans Typewriter", monospace;
+    text-decoration: none;
+    z-index: 2;
+    transition: opacity 400ms ease, margin-left 800ms ease;
+}
+.contact:hover {
+    opacity: 1;
+}
+.contact2:hover {
+    opacity: 1;
+}
+#menu-background-pattern {
+    height: 100%;
+    width: 100%;
+    
+    background-image: radial-gradient(rgba(2255, 255, 255, 0.1) 9%, transparent 9%);
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+
+    transition: opacity 800ms ease, background-size 800ms ease, background-position 800ms ease;
+}
+#menu[data-active-index="0"] > #menu-background-pattern {
+    background-position: 0% -20%;
+}
+#menu[data-active-index="1"] > #menu-background-pattern {
+    background-position: 0% -40%;
+}
+#menu[data-active-index="2"] > #menu-background-pattern {
+    background-position: 0% -60%;
+}
+#menu[data-active-index="3"] > #menu-background-pattern {
+    background-position: 0% -80%;
+}
+#menu[data-active-index="4"] > #menu-background-pattern {
+    background-position: 0% -100%;
+}
+#menu-background-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/image (19).PNG");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    background-position: center 0%;
+    background-size: 145vmax;
+    opacity: 0.15;
+    transition: opacity 800ms ease, background-size 800ms ease, background-position 800ms ease;
+}
+#menu-items:hover ~ #menu-background-image {
+    background-size: 135vmax;
+    opacity: 0.1;
+}
+#menu[data-active-index="0"] > #menu-background-image {
+    background-position: center 0%;
+}
+
+#menu[data-active-index="1"] > #menu-background-image {
+    background-position: center 20%;
+}
+
+#menu[data-active-index="2"] > #menu-background-image {
+    background-position: center 51.5%;
+}
+
+#menu[data-active-index="3"] > #menu-background-image {
+    background-position: center 80%;
+}
+#menu[data-active-index="4"] > #menu-background-image {
+    background-position: center 102%;
+}

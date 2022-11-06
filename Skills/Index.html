@@ -1,0 +1,74 @@
+﻿<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="../css/site2.css">
+<a href="javascirpt:void" id="menu-item" onclick="onBtnClickHandle()">Home</a>
+<a class="title">Skills</a>
+<div class='parent'>
+<a class="subtitle">Programs & Applications</a>
+<a class="subtitle">Launguages</a>
+</div>
+<div class='parent'>
+<div class="boxed">
+-	Unity <br>
+-	Unity Render pipeline, lighting & postprocessing<br>
+-	PBR, UV, Height, Reflection Mapping<br>
+-	Blender<br>
+-	Unreal Engine 4<br>
+-	Adobe Substance Designer<br>
+-	Speedtree<br>
+-	Adobe Photoshop<br>
+-	Adobe Illustrator<br>
+-	Adobe Premier<br>
+-	Autodesk Mudbox<br>
+-	Autodesk Maya<br>
+-	Visual Studio<br>
+-	REST API development<br>
+-	COBRA API development<br>
+-	.NET development<br>
+-	AJAX (in the context of Javascript)<br>
+-	REACT<br>
+-	Procedural environment generation<br>
+-	Machine learning simulation and *dumb* (Agent) AI development<br>
+-	Android Studio<br>
+-	Bohemia’s new Enfusion Engine source code development<br>
+-	RUCKUS Server Manager<br>
+-	AWS<br>
+-	Microsoft Azure<br>
+-	Linux, Apache, VIM<br>
+-	Gradle<br>
+-	Git<br>
+-	Firebase software integration<br>
+-	Multithreading, Kernel programming<br>
+-	Web Encryption/Tokenization/SSH Encoding/Base 64 Encoding<br>
+-	Power Automate<br>
+</div>
+<div class="boxed">
+-	C# <br>
+-	C++<br>
+-	C<br>
+-	ShaderLab, unity graphics language<br>
+-	Java<br>
+-	Python<br>
+-	Javascript<br>
+-	HTML<br>
+-	CSS<br>
+-	Rust<br>
+-	SQL<br>
+-	Assembly<br>
+-	Network CLI <br>
+-   Typescript<br>
+-   Flow-based programming (piplines)<br>
+
+</div>
+</div>
+<div id="menu-background-image" class="skills"></div>
+
+<script>
+    function onBtnClickHandle(){
+    document.getElementById("menu-background-image").style.backgroundPositionX = "110vw";
+    document.getElementById("menu-item").style.marginLeft = "110vw";
+    document.getElementsByClassName("title")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("subtitle")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("boxed")[0].style.marginLeft = "110vw";
+    setTimeout(function(){window.location="../index.html"}, 800);
+}
+</script>

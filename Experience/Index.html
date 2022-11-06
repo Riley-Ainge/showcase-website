@@ -1,0 +1,27 @@
+﻿<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="../css/site2.css">
+<a href="javascirpt:void" id="menu-item" onclick="onBtnClickHandle()">Home</a>
+<a class="title">Experience</a>
+<div class="boxed">
+<pre>[2013-2014]    Project 1  <br>
+[2014-2021]    Project 2  <br>
+[2020-2020]    Some work on the DayZ development time for a few months last year <br>
+[2021-2022]    Work on Bohemia Interactives new Enfusion engine as an engine developer – part time <br>
+[2019]         Work experience at the animation studio animal logic, which have done movies like the Lego movie and peter rabbit.<br>
+[2018-2019]    Working for a year at my school’s IT firm, which involved programming systems <br>
+[2022-current] brought back to my school this year as a network infrastructure/systems expert, working part  time on developing<br>
+               and support new and current systems <br>
+[occasional]   network & infrastructure developer, setting up servers, netcode and remoting for multiplayers games and small businesses<br>
+[occasional]   doing many one-time freelance jobs for start-up game developers<br> </pre>
+</div>
+<div id="menu-background-image" class="experience"></div>
+
+<script>
+    function onBtnClickHandle(){
+    document.getElementById("menu-background-image").style.backgroundPositionX = "110vw";
+    document.getElementById("menu-item").style.marginLeft = "110vw";
+    document.getElementsByClassName("title")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("boxed")[0].style.marginLeft = "110vw";
+    setTimeout(function(){window.location="../index.html"}, 800);
+}
+</script>

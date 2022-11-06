@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="css/site.css">
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width" />
+<div class="toptext">Created by me using raw HTML, CSS, Javascript</div>
+<div id="menu">
+    <div id="menu-items">
+        <a href="/" class="menu-item" id="menu-item1">Home</a>
+        <a href="javascirpt:void" class="menu-item" onclick="onBtnClickHandleAbout()" id="menu-item2">About Me</a>
+        <a href="javascirpt:void" class="menu-item" onclick="onBtnClickHandleSkills()" id="menu-item3">Skills</a>
+        <a href="javascirpt:void" class="menu-item" onclick="onBtnClickHandleExperience()" id="menu-item4">Experience</a>
+        <a href="javascirpt:void" class="menu-item" onclick="onBtnClickHandleShowcase()" id="menu-item5">Showcase</a>
+    </div>
+    <div id="menu-background-pattern"></div>
+    <div id="menu-background-image"></div>
+        <a href="javascript:void" class="contact" onclick="onBtnClickHandleContact()">Contact</a>
+        <a href="javascript:void" class="contact2" onclick="onBtnClickHandleArchive()">Extended Archives</a>
+    </div>
+    <script src="js/site.js"></script>
+
+    <script>
+        function onBtnClickHandleAbout() {
+            document.getElementById("menu-background-image").style.backgroundPositionX = "-150vw";
+            document.getElementById("menu-background-pattern").style.backgroundPositionX = "-100%";
+            document.getElementById("menu-items").style.marginLeft = "-100vw";
+            document.getElementById("menu-background-pattern").style.backgroundSize = "12vmin 12vmin";
+            document.getElementById("menu-background-pattern").style.opacity = "1";
+            document.getElementsByClassName("contact")[0].style.marginLeft = "-100%";
+            setTimeout(function () { window.location = "About/index.html" }, 800);
+        }
+        function onBtnClickHandleSkills() {
+            document.getElementById("menu-background-image").style.backgroundPositionX = "-150vw";
+            document.getElementById("menu-background-pattern").style.backgroundPositionX = "-100%";
+            document.getElementById("menu-items").style.marginLeft = "-100vw";
+            document.getElementById("menu-background-pattern").style.backgroundSize = "12vmin 12vmin";
+            document.getElementById("menu-background-pattern").style.opacity = "1";
+            document.getElementsByClassName("contact")[0].style.marginLeft = "-100%";
+            setTimeout(function () { window.location = "Skills/index.html" }, 800);
+        }
+        function onBtnClickHandleExperience() {
+            document.getElementById("menu-background-image").style.backgroundPositionX = "-150vw";
+            document.getElementById("menu-background-pattern").style.backgroundPositionX = "-100%";
+            document.getElementById("menu-items").style.marginLeft = "-100vw";
+            document.getElementById("menu-background-pattern").style.backgroundSize = "12vmin 12vmin";
+            document.getElementById("menu-background-pattern").style.opacity = "1";
+            document.getElementsByClassName("contact")[0].style.marginLeft = "-100%";
+            setTimeout(function () { window.location = "Experience/index.html" }, 800);
+        }
+        function onBtnClickHandleShowcase() {
+            document.getElementById("menu-background-image").style.backgroundPositionX = "-150vw";
+            document.getElementById("menu-background-pattern").style.backgroundPositionX = "-100%";
+            document.getElementById("menu-items").style.marginLeft = "-100vw";
+            document.getElementById("menu-background-pattern").style.backgroundSize = "12vmin 12vmin";
+            document.getElementById("menu-background-pattern").style.opacity = "1";
+            document.getElementsByClassName("contact")[0].style.marginLeft = "-100%";
+            setTimeout(function () { window.location = "Showcase/index.html" }, 800);
+        }
+        function onBtnClickHandleContact() {
+            document.getElementById("menu-background-image").style.backgroundPositionY = "120%";
+            document.getElementById("menu-background-pattern").style.backgroundPosition = "0% -200%";
+            document.getElementById("menu-items").style.marginLeft = "-100vw";
+            document.getElementById("menu-background-pattern").style.backgroundSize = "12vmin 12vmin";
+            document.getElementById("menu-background-pattern").style.opacity = "1";
+            document.getElementsByClassName("contact")[0].style.marginLeft = "-100%";
+            setTimeout(function () { window.location = "Contact/index.html" }, 800);
+        }
+        function onBtnClickHandleArchive() {
+            document.getElementById("menu-background-image").style.backgroundPositionY = "120%";
+            document.getElementById("menu-background-pattern").style.backgroundPosition = "0% -200%";
+            document.getElementById("menu-items").style.marginLeft = "-100vw";
+            document.getElementById("menu-background-pattern").style.backgroundSize = "12vmin 12vmin";
+            document.getElementById("menu-background-pattern").style.opacity = "1";
+            document.getElementsByClassName("contact")[0].style.marginLeft = "-100%";
+            setTimeout(function () { window.open("https://waste-archives.netlify.app") }, 800);
+            setTimeout(function () { window.location = "index.html" }, 1000);
+        }
+    </script>

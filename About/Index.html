@@ -1,0 +1,18 @@
+﻿<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="../css/site2.css">
+<a href="javascirpt:void" id="menu-item" onclick="onBtnClickHandle()">Home</a>
+<a class="title">About Me</a>
+<div class="boxed">
+  Hi I’m a Western Australian full-stack software engineer, currently network and infrastructure developer who has also been a game developer part-time for the past 7 years, I've been a programmer for as long as I remember, starting since I was 12, I love developing software and systems that can be used and help people and have an insatiable desire to learn new technologies and techniques, I love the idea of a new role allowing me to work and gain more experience in new technologies as well as bring as much value to whatever I'm doing from the vast experience in various fields in the industry I've already practised in.
+</div>
+<div id="menu-background-image" class="about"></div>
+
+<script>
+    function onBtnClickHandle(){
+    document.getElementById("menu-background-image").style.backgroundPositionX = "110vw";
+    document.getElementById("menu-item").style.marginLeft = "110vw";
+    document.getElementsByClassName("title")[0].style.marginLeft = "110vw";
+    document.getElementsByClassName("boxed")[0].style.marginLeft = "110vw";
+    setTimeout(function(){window.location="../index.html"}, 800);
+}
+</script>
